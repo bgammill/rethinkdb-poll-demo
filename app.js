@@ -24,8 +24,32 @@ bluebird.coroutine(function*() {
       ]);
 
       yield r.table("polls").insert({
-        title: "Who is the best Star Trek captain?",
-        choices: ["Captain Kirk", "Captain Archer", "Captain Janeway", "Captain Picard", "Captain Sisko"].map(i => ({id: r.uuid(), label: i})),
+        title: "March 11th, 2016",
+        choices: ["Mild", "Medium", "Hot"].map(i => ({id: r.uuid(), label: i})),
+        created: r.now()
+      });
+
+      yield r.table("polls").insert({
+        title: "March 18th, 2016",
+        choices: ["Mild", "Medium", "Hot"].map(i => ({id: r.uuid(), label: i})),
+        created: r.now()
+      });
+
+      yield r.table("polls").insert({
+        title: "March 25th, 2016",
+        choices: ["Mild", "Medium", "Hot"].map(i => ({id: r.uuid(), label: i})),
+        created: r.now()
+      });
+
+      yield r.table("polls").insert({
+        title: "April 1, 2016",
+        choices: ["Mild", "Medium", "Hot"].map(i => ({id: r.uuid(), label: i})),
+        created: r.now()
+      });
+
+      yield r.table("polls").insert({
+        title: "April 8, 2016",
+        choices: ["Mild", "Medium", "Hot"].map(i => ({id: r.uuid(), label: i})),
         created: r.now()
       });
 

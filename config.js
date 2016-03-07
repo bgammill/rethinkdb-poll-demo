@@ -1,7 +1,7 @@
 module.exports = {
   database: {
-    host: "localhost",
-    port: 28015,
+    host: "192.168.99.100",
+    port: 32769,
     db: "polltime"
   }
 };

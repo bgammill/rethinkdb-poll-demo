@@ -1,0 +1,90 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background: #f2f3f5;
+  margin: 0;
+}
+h1 {
+  background: #262626;
+  color: #fff;
+  padding: 25px;
+  font-weight: 100;
+  letter-spacing: 1.5;
+  margin: 0;
+}
+h2 {
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.graphs {
+  background: #fff;
+  border-left: 1px solid #dedede;
+  height: 100%;
+  padding: 30px;
+  float: right;
+}
+.graphs #thinker {
+  position: relative;
+  width: 175px;
+  height: 175px;
+  top: -240px;
+  left: 63px;
+  transition: transform 2s ease-in;
+}
+.graphs #thinker.left {
+  transform: rotate(-20deg);
+}
+.graphs #thinker.right {
+  transform: rotate(20deg);
+}
+#poll-list a {
+  text-decoration: none;
+  font-size: 18px;
+}
+.content {
+  padding-left: 20px;
+}
+.choice {
+  background: #fff;
+  border: 1px solid #dedede;
+  display: inline-block;
+  min-width: 250px;
+  margin: 10px 20px 10px 0;
+}
+.choice h3 {
+  margin-top: 5px;
+  margin-left: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+.choice .counter {
+  float: right;
+  color: #fff;
+  font-size: 36px;
+  padding: 15px;
+}
+.button {
+  text-decoration: none;
+  background: #e8e8e8;
+  margin-left: 10px;
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+  font-size: 12px;
+  color: #5e5e5e;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.buttonhover {
+  background: #a9a9a9;
+  color: #fff;
+}
+#vote-pie {
+  width: 300px;
+  height: 300px;
+}
+#vote-pie text {
+  display: none;
+}

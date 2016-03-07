@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Vue Application Demo</title>
+    <title>Novus Burrito Board</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.4/vue.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/0.1.16/vue-resource.min.js"></script>
@@ -17,12 +17,12 @@
   </head>
   <body>
 
-    <h1>RethinkDB Poll Demo</h1>
+    <h1>Novus Burrito Board</h1>
 
     <div class="poll">
       <div class="graphs">
         <div class="epoch" id="vote-pie"></div>
-        <img id="thinker" src="/thinker.svg">
+        <img id="thinker" src="/burrito.svg">
       </div>
 
       <div class="content">
@@ -32,7 +32,7 @@
           <div class="choice" v-for="choice in poll.choices">
             <div class="counter ref category{{$index+1}}">{{choice.value}}</div>
             <h3>{{choice.label}}</h3>
-            <a class="button" href="#" @click="newVote(choice)">Vote</a>
+            <a class="button" href="#" @click="newVote(choice)">Order</a>
           </div>
         </div>
       </div>
